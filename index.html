@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zarin Tasnim Rahman – Software QA Engineer & Business Analyst</title>
+<meta name="description" content="Software Quality Assurance Engineer and Business Analyst with 6+ years in ERP software, test automation and security testing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1f1e;--panel:#10302d;--fg:#e8fbf7;--dim:#8fb8b0;--acc:#ff7a59;--acc-ink:#ff8f72;--on-acc:#0a1f1e;
+--d:'Space Grotesk','Arial Narrow',Arial,sans-serif;--b:'DM Sans',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fff8f1;--panel:#ffeadb;--fg:#12302c;--dim:#5b6f6b;--acc:#ff6b4a;--acc-ink:#c2410c;--on-acc:#12302c}}
+:root[data-theme="light"]{--bg:#fff8f1;--panel:#ffeadb;--fg:#12302c;--dim:#5b6f6b;--acc:#ff6b4a;--acc-ink:#c2410c;--on-acc:#12302c}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased;transition:background-color .35s,color .35s}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc-ink);outline-offset:3px}
+.w{max-width:1240px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:2px solid var(--fg)}
+header .w{display:flex;justify-content:space-between;align-items:center;gap:12px;height:60px}
+.mark{font:700 18px var(--d);text-decoration:none}
+nav{display:flex;gap:clamp(14px,3vw,34px)}
+nav a{text-decoration:none;font-weight:500;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--acc-ink)}
+h1,h2,h3{font-family:var(--d);line-height:.98;letter-spacing:-.03em}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;border-bottom:2px solid var(--fg)}
+.hero-l{padding:clamp(28px,6vw,72px) clamp(16px,4vw,40px) 40px 0;border-right:2px solid var(--fg)}
+h1{font-size:clamp(48px,8.6vw,124px);font-weight:700}
+h1 span{display:block;overflow:hidden}
+h1 span i{display:block;font-style:normal;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+h1 span:nth-child(2) i{animation-delay:.12s}h1 span:nth-child(3) i{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.lede{max-width:48ch;margin-top:32px;font-size:19px}
+.lede b{font-weight:500;background:var(--acc);color:var(--on-acc);padding:0 6px}
+.hero-r{display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(20px,4vw,40px) 0 40px clamp(16px,4vw,40px)}
+.panel,.job{background:var(--panel);border:2px solid var(--fg)}
+.panel{box-shadow:8px 8px 0 var(--acc)}
+.panel h3{font-size:20px;padding:14px 18px;border-bottom:2px solid var(--fg);display:flex;justify-content:space-between;gap:12px}
+.panel h3 small{font:400 13px var(--b);color:var(--dim);letter-spacing:0;align-self:center}
+.bars{padding:18px;display:grid;gap:12px}
+.bar{display:grid;grid-template-columns:96px 1fr 44px;gap:12px;align-items:center;font-size:15px}
+.bar div{height:20px;border:2px solid var(--fg);position:relative}
+.bar div i{position:absolute;inset:0;background:var(--acc);transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.bar em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:2px solid var(--fg)}
+.stat{padding:26px 20px;border-right:2px solid var(--fg)}
+.stat:last-child{border:0}
+.stat b{display:block;font:700 clamp(40px,6vw,76px)/1 var(--d);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stat span{color:var(--dim);font-size:15px}
+section{border-bottom:2px solid var(--fg);padding:clamp(40px,7vw,88px) 0}
+.row{display:grid;grid-template-columns:240px 1fr;gap:clamp(20px,5vw,64px)}
+h2{font-size:clamp(32px,4.2vw,54px);font-weight:700;position:sticky;top:90px;align-self:start}
+.cards{display:grid;grid-template-columns:1fr 1fr;border:2px solid var(--fg)}
+.card{padding:22px;border-right:2px solid var(--fg);border-bottom:2px solid var(--fg)}
+.card:nth-child(2n){border-right:0}.card:nth-last-child(-n+2){border-bottom:0}
+.card h3{font-size:24px;margin-bottom:10px}
+.card p{color:var(--dim);font-size:16px}
+.tag{display:inline-block;margin-bottom:12px;padding:2px 8px;font-size:13px;font-weight:500;background:var(--acc);color:var(--on-acc)}
+.job{padding:24px;margin-bottom:32px}
+.job h3{font-size:28px;margin-bottom:4px}
+.job .at{color:var(--dim);margin-bottom:14px}
+.job li{margin-left:18px;margin-bottom:6px}
+.skills,.plain{border-top:2px solid var(--fg);list-style:none;padding:0}
+.skills div{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--dim)}
+.skills dt{font-weight:500}.skills dd{color:var(--dim)}
+.plain li{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--dim)}
+.plain b{font-weight:500}.plain span{color:var(--dim);text-align:right}
+.contact{padding-bottom:0;border-bottom:0}
+.mail{display:block;font:700 clamp(26px,6.4vw,92px)/1 var(--d);letter-spacing:-.04em;text-decoration:none;word-break:break-all;margin:8px 0 28px}
+.mail:hover{color:var(--acc-ink)}
+.links{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:56px}
+.btn,.tgl{font:500 16px var(--b);padding:12px 20px;border:2px solid var(--fg);background:var(--bg);color:var(--fg);text-decoration:none;cursor:pointer;box-shadow:5px 5px 0 var(--acc);transition:transform .15s,box-shadow .15s}
+.tgl{font-size:14px;padding:6px 12px;box-shadow:3px 3px 0 var(--acc)}
+.btn:hover,.tgl:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--acc)}
+footer{padding:20px 0 28px;color:var(--dim);font-size:14px;border-top:2px solid var(--fg)}
+@media (max-width:860px){
+.hero{grid-template-columns:1fr}.hero-l{border-right:0;border-bottom:2px solid var(--fg);padding-right:0}.hero-r{padding:32px 8px 40px 0}
+.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:2px solid var(--fg)}
+.row{grid-template-columns:1fr}h2{position:static}
+.cards{grid-template-columns:1fr}.card{border-right:0!important;border-bottom:2px solid var(--fg)!important}.card:last-child{border-bottom:0!important}
+.skills div{grid-template-columns:1fr;gap:2px}.plain li{flex-direction:column;gap:4px}.plain span{text-align:left}
+nav a:nth-child(n+4){display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span i{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="mark" href="#top">Zarin Rahman</a>
+<nav aria-label="Sections"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#certs">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<button class="tgl" id="tgl" type="button" aria-label="Switch between dark and light theme">Light mode</button></div></header>
+
+<main id="top"><div class="w">
+<div class="hero">
+ <div class="hero-l">
+  <h1 aria-label="Zarin Tasnim Rahman"><span><i>Zarin</i></span><span><i>Tasnim</i></span><span><i>Rahman</i></span></h1>
+  <p class="lede">Software Quality Assurance Engineer at Edusoft Consultants Ltd. with 6+ years in ERP software. I test, break and document systems, and also work as a Business Analyst, so <b>requirements and quality meet early</b>.</p>
+ </div>
+ <div class="hero-r">
+  <div class="panel" role="img" aria-label="Illustrative test coverage by type">
+   <h3>Test coverage <small>illustrative</small></h3>
+   <div class="bars" id="bars"></div>
+  </div>
+ </div>
+</div>
+
+<div class="stats">
+ <div class="stat"><b data-n="6" data-p="+">0</b><span>Years in ERP software</span></div>
+ <div class="stat"><b data-n="8">0</b><span>ERP projects tested</span></div>
+ <div class="stat"><b data-n="8">0</b><span>Certifications</span></div>
+ <div class="stat"><b data-n="3">0</b><span>Years as teaching assistant</span></div>
+</div>
+
+<section id="experience"><div class="row"><h2>Experience</h2>
+<div>
+ <div class="job"><h3>Software Quality Assurance Engineer / Business Analyst</h3><p class="at">Edusoft Consultant Ltd. · Dhaka · 2018 – Present</p>
+ <ul>
+  <li>Dual role: requirements gathering, documentation and end-user training alongside quality assurance.</li>
+  <li>Tested C# university ERP solutions for UAP, IBA, BUFT, BRUR, Global University, ZHSUST, BPERB and GREEN University, completing 8 ERP projects across Academic, Admissions, Administration and specialised modules (OBE, Alumni, Mobile Apps).</li>
+  <li>Load testing, vulnerability assessments and penetration testing on ERP systems.</li>
+  <li>Applied WBS and the Delphi Method for planning and estimation.</li>
+  <li>Hands-on across SDLC: planning, requirements, design, testing, deployment, maintenance.</li>
+  <li>Documented new requirements, worked with developers, delivered user training and post-installation support.</li>
+ </ul></div>
+ <div class="job"><h3>Graduate Teaching Assistant</h3><p class="at">United International University · Dhaka · 2019 – 2022</p>
+ <ul><li>Supported faculty in lab classes, counselled students on complex topics, managed marks calculation and paper cross-checking, and proctored examinations.</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="row"><h2>Skills & tools</h2>
+<dl class="skills">
+ <div><dt>Languages</dt><dd>C, Python, Java</dd></div>
+ <div><dt>Front end & database</dt><dd>UI/UX, MySQL</dd></div>
+ <div><dt>Automation</dt><dd>Selenium (web), Appium (mobile)</dd></div>
+ <div><dt>Testing</dt><dd>Unit, integration, white box, black box, acceptance, performance, load, usability, compatibility, regression, database and automation testing</dd></div>
+ <div><dt>Tools</dt><dd>Postman, JMeter, Figma, ClickUp, Jira, Trello, Git, MS Visio, draw.io</dd></div>
+ <div><dt>Security</dt><dd>Burp Suite Pro, OWASP ZAP, nmap, vulnerability assessment, penetration testing, basic routing and switching</dd></div>
+ <div><dt>Methodologies</dt><dd>Agile, Waterfall, WBS, Delphi Method, BRD, FRD, use cases, user stories, risk assessment, change management</dd></div>
+ <div><dt>Business</dt><dd>Process modelling (BPMN, UML, flowcharts), communication and stakeholder engagement</dd></div>
+</dl></div></section>
+
+<section id="certs"><div class="row"><h2>Certifications</h2>
+<ul class="plain">
+ <li><b>ISTQB Certified Tester, Foundation Level</b><span>iSQI, Germany · 2022</span></li>
+ <li><b>CNSS Certified Network Security Specialist</b><span>ICSI, UK · 2020</span></li>
+ <li><b>Splunk 7.X Fundamentals Part 1</b><span>Splunk · 2020</span></li>
+ <li><b>PCAP: Programming Essentials in Python</b><span>UIU · 2020</span></li>
+ <li><b>Cyber Security & Ethical Hacking</b><span>UIU · 2020</span></li>
+ <li><b>Red Hat Linux Essential</b><span>UIU · 2020</span></li>
+ <li><b>CCNA (Routing & Switching)</b><span>UIU · 2019</span></li>
+ <li><b>BGD e-GOV CIRT Cyber Drill</b><span>Participant · 2020</span></li>
+</ul></div></section>
+
+<section id="education"><div class="row"><h2>Education</h2>
+<ul class="plain">
+ <li><b>M.Sc. in Computer Science and Engineering</b><span>United International University · 2025</span></li>
+ <li><b>B.Sc. in Electrical & Electronics Engineering</b><span>United International University · 2017</span></li>
+</ul></div></section>
+
+<section class="contact" id="contact">
+ <h2 style="position:static">Let’s work together</h2>
+ <a class="mail" href="mailto:zarintas95@gmail.com">zarintas95@gmail.com</a>
+ <div class="links">
+  <button class="btn" id="copy" type="button">Copy email</button>
+  <a class="btn" href="tel:+8801881162686">Call 018 8116 2686</a>
+ </div>
+</section>
+</div></main>
+<footer><div class="w">© 2026 Zarin Tasnim Rahman · Dhaka, Bangladesh</div></footer>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var data=[['Unit',92],['Integration',86],['Regression',90],['Security',78]],bars=document.getElementById('bars');
+data.forEach(function(d){var e=document.createElement('div');e.className='bar';e.innerHTML='<span>'+d[0]+'</span><div><i></i></div><em>'+d[1]+'%</em>';bars.appendChild(e);
+var i=e.querySelector('i');setTimeout(function(){i.style.transform='scaleX('+d[1]/100+')'},rm?0:300)});
+function run(el){var n=+el.dataset.n,p=el.dataset.p||'',s=performance.now();
+if(rm){el.textContent=n+p;return}
+(function f(t){var q=Math.min(1,(t-s)/1000),e=1-Math.pow(1-q,3);el.textContent=Math.round(n*e)+(q===1?p:'');if(q<1)requestAnimationFrame(f)})(s)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target)}})},{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(function(e){io.observe(e)});
+var cb=document.getElementById('copy');
+cb.addEventListener('click',function(){(navigator.clipboard?navigator.clipboard.writeText('zarintas95@gmail.com'):Promise.reject()).then(function(){cb.textContent='Copied'},function(){cb.textContent='Select the address above'});setTimeout(function(){cb.textContent='Copy email'},1800)});
+var root=document.documentElement,tg=document.getElementById('tgl');
+function eff(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}
+function lab(){tg.textContent=eff()==='dark'?'Light mode':'Dark mode'}
+try{var st=localStorage.getItem('theme');if(st==='light'||st==='dark')root.setAttribute('data-theme',st)}catch(e){}
+lab();
+tg.addEventListener('click',function(){var n=eff()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}lab()});
+})();
+</script>
+</body>
+</html>
